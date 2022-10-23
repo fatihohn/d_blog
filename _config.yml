@@ -66,31 +66,26 @@ defaults:
     values:
       layout: "about"
       author: "Yunscent"
-      date: "now"
   - scope:
       path: ""
       type: "memoir"
     values:
       layout: "post"
       author: "Yunscent"
-      date: "now"
   - scope:
       path: ""
       type: "blog"
     values:
       layout: "post"
       author: "Yunscent"
-      date: "now"
   - scope:
       path: ""
       type: "photography"
     values:
       layout: "photo"
       author: "Yunscent"
-      date: "now"
   - scope:
       path: ""
     values:
       layout: "default"
       author: "Yunscent"
-      date: "now"
