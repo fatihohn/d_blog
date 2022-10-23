@@ -26,10 +26,15 @@ collections_dir: _collections
 twitter_username: jekyllrb
 github_username:  jekyll
 
+
+
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-paginate-v2
+
+gems:
   - jekyll-paginate-v2
 
 # Exclude from processing.
@@ -44,21 +49,9 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# collections:
-#   blog:
-#     output: true
-#   articles:
-#     output: true
-#   letters:
-#     output: true
-#   speeches:
-#     output: true
-#   tutorials:
-#     output: true
-#   test:
-#     output: true
-
 collections:
+  about:
+    output: true
   memoir:
     output: true
   blog:
@@ -66,6 +59,33 @@ collections:
   photography:
     output: true
 
-
-# paginate: 5
-# paginate_path: /page:num
+defaults:
+  - scope:
+      path: ""
+      type: "about"
+    values:
+      layout: "about"
+      date: {{ "now" | date: "%Y-%m-%d %H:%M" }}
+  - scope:
+      path: ""
+      type: "memoir"
+    values:
+      layout: "post"
+      date: {{ "now" | date: "%Y-%m-%d %H:%M" }}
+  - scope:
+      path: ""
+      type: "blog"
+    values:
+      layout: "post"
+      date: {{ "now" | date: "%Y-%m-%d %H:%M" }}
+  - scope:
+      path: ""
+      type: "photography"
+    values:
+      layout: "photo"
+      date: {{ "now" | date: "%Y-%m-%d %H:%M" }}
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      date: {{ "now" | date: "%Y-%m-%d %H:%M" }}
