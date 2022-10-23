@@ -65,27 +65,32 @@ defaults:
       type: "about"
     values:
       layout: "about"
-      date: {{ "now" | date: "%Y-%m-%d %H:%M" }}
+      author: "Yunscent"
+      date: "now"
   - scope:
       path: ""
       type: "memoir"
     values:
       layout: "post"
-      date: {{ "now" | date: "%Y-%m-%d %H:%M" }}
+      author: "Yunscent"
+      date: "now"
   - scope:
       path: ""
       type: "blog"
     values:
       layout: "post"
-      date: {{ "now" | date: "%Y-%m-%d %H:%M" }}
+      author: "Yunscent"
+      date: "now"
   - scope:
       path: ""
       type: "photography"
     values:
       layout: "photo"
-      date: {{ "now" | date: "%Y-%m-%d %H:%M" }}
+      author: "Yunscent"
+      date: "now"
   - scope:
       path: ""
     values:
       layout: "default"
-      date: {{ "now" | date: "%Y-%m-%d %H:%M" }}
+      author: "Yunscent"
+      date: "now"
