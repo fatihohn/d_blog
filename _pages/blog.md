@@ -1,7 +1,7 @@
 ---
 layout: section
 title: blog
-permalink: blog
+permalink: /blog
 pagination: 
   enabled: true
   category: blog
